@@ -38,9 +38,33 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 tippy('#preOrder', {
-    content: 'Возможен предказ,<br> читать <a href="test"> подробнее</a<',
-    // duration: 1000,
+    content: 'Возможен предказ,<br> читать <a href="test"> подробнее</a>',
     allowHTML: true,
     hideOnClick: 'toggle',
     interactive: true,
+});
+tippy('#instaLink', {
+    content: 'Instagram (запрещён в России, принадлежит Meta)',
+    allowHTML: true,
+    hideOnClick: 'toggle',
+    interactive: true,
+    theme: 'tomato',
+});
+
+const reviewsSwiper = new Swiper('.reviews__slider', {
+    slidesPerView: 4,
+    spaceBetween: 24,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+
+        1024: { slidesPerView: 4 },
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1 },
+        0: { slidesPerView: 1 },
+
+    },
 });

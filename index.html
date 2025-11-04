@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>package</title>
+    <link rel="icon" href="./src/icons/navLogo.svg" type="image/x-icon" />
+    <title>StoreFront</title>
     <script type="module" src="/src/main.js"></script>
 
 </head>
@@ -16,11 +17,8 @@
             <a href="/" class="navbar__logo" aria-label="StoreFront Home">
                 <img src="./src/icons/navLogo.svg" alt="StoreFront logo" width="60" height="60" />
             </a>
-
-
-
             <nav class="navbar__nav" role="navigation" aria-label="Main navigation">
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#photos">Фотосессии</a></li>
                     <li><a href="#social">Соц.сети</a></li>
                     <li class="dropdown">
@@ -45,9 +43,9 @@
 
             </nav>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
     </button>
         </div>
 
@@ -164,8 +162,100 @@
                 </div>
             </div>
 
+
         </div>
     </section>
+    <section class="reviews">
+        <h2 class="reviews__title">Отзывы участников клуба</h2>
+        <div class="reviews__main">
+            <div class="swiper-button-prev"></div>
+            <div class="reviews__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide review-card">
+                        <div class="review-card__top">
+                            <div class="review-card__avatar"></div>
+                            <h3 class="review-card__name">Иван Сусанин</h3>
+                        </div>
+                        <p class="review-card__text">
+                            Я сэкономил кучу времени и получил 30 готовых образов за 5 минут. Раньше такие съёмки занимали неделю и стоили как отпуск.
+                        </p>
+                        <span class="review-card__date">23.05.2025</span>
+                    </div>
+
+                    <div class="swiper-slide review-card">
+                        <div class="review-card__top">
+                            <div class="review-card__avatar"></div>
+                            <h3 class="review-card__name">Александра К.</h3>
+                        </div>
+
+                        <p class="review-card__text">
+                            Я всегда стеснялась фотографироваться, но ИИ убрал все комплексы. Осталось только внутреннее “вау”.
+                        </p>
+                        <span class="review-card__date">23.05.2025</span>
+                    </div>
+
+                    <div class="swiper-slide review-card">
+                        <div class="review-card__top">
+                            <div class="review-card__avatar"></div>
+                            <h3 class="review-card__name">Анита Русова</h3>
+                        </div>
+
+                        <p class="review-card__text">
+                            Каждый образ — как отдельная вселенная. Уже использую.
+                        </p>
+                        <span class="review-card__date">23.05.2025</span>
+                    </div>
+
+                    <div class="swiper-slide review-card">
+                        <div class="review-card__top">
+                            <div class="review-card__avatar"></div>
+                            <h3 class="review-card__name">Ольга</h3>
+                        </div>
+                        <p class="review-card__text">
+                            Моя аудитория в <a id="instaLink" href="#">Instagram*</a> в шоке — все думают, что я была в Дубае.
+                        </p>
+                        <span class="review-card__date">07.08.2025</span>
+                    </div>
+                    <div class="swiper-slide review-card">
+                        <div class="review-card__top">
+                            <div class="review-card__avatar"></div>
+                            <h3 class="review-card__name">Иван Сусанин</h3>
+                        </div>
+                        <p class="review-card__text">
+                            Я сэкономил кучу времени и получил 30 готовых образов за 5 минут. Раньше такие съёмки занимали неделю и стоили как отпуск.
+                        </p>
+                        <span class="review-card__date">23.05.2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+        </div>
+
+
+
+    </section>
+    <section class="ai-photo">
+        <div class="container">
+            <h2 class="ai-photo__title">
+                Нейрофотосессии нового поколения: создайте уникальный образ без студии и фотографа
+            </h2>
+            <p class="ai-photo__text">
+                Нейрофотосессия — это инновационный способ получить профессиональные фотографии в любом стиле: от кинематографичных портретов до футуристических fashion-образов. С помощью искусственного интеллекта вы можете создать десятки вариантов внешности, локаций
+                и атмосфер, не выходя из дома. Такие изображения подходят для социальных сетей, личного бренда, рекламы и визуального позиционирования. Используя нейросети, вы экономите время, получаете мгновенный результат и выделяетесь на фоне стандартного
+                контента.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__logo"><img src="./src/icons/navLogo.svg"></div>
+            <p class="footer__copy">© 2025 AI КЛУБ. Все права защищены</p>
+        </div>
+    </footer>
+
+
 
 
 </body>
